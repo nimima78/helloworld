@@ -1,7 +1,7 @@
-FROM openjdk:8
- ADD HelloWorld.java .
- RUN javac HelloWorld.java
- ENTRYPOINT java HelloWorld
+FROM ubuntu
+ ADD helloworld.java .
+ RUN javac helloworld.java
+ ENTRYPOINT java helloworld
 
 
 
