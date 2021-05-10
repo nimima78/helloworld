@@ -1,8 +1,7 @@
-public class HelloWorld {
- public static void main(String[] args) {
-  System.out.println("Hello Hi Hi nimi LOGIC TVPM");
-  }
-}
+FROM openjdk:8
+ ADD HelloWorld.java .
+ RUN javac HelloWorld.java
+ ENTRYPOINT java HelloWorld
 
 
 
